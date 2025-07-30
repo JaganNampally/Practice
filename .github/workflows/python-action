@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: "2 23 * * *"
+job:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run python script
+        run: python script.py
