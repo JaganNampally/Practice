@@ -1,14 +1,14 @@
 name: Python script job
 on:
   schedule:
-    - cron: "54 17 * * *"
+    - cron: "57 17 * * *"
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        run: action/checkout@v4
+        uses: actions/checkout@v4
         
       - name: run python script
         run: python script.py
