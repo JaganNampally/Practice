@@ -3,6 +3,10 @@ name: Simple Test Action
 on:
   push:
     branches: [ "master" ]
+  schedule:
+    - cron: "* * * * *"    # ⏰ Trigger every minute (UTC)
+  workflow_dispatch:       # 🖱 Optional: Manual trigger from UI
+    
 
 jobs:
   test:
