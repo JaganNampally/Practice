@@ -2,6 +2,7 @@ name: Python script job
 on:
   schedule:
     - cron: "41 17 * * *"
+    workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
