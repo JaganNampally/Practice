@@ -6,7 +6,10 @@ on:
   schedule:
     - cron: "* * * * *"    # ⏰ Trigger every minute (UTC)
   workflow_dispatch:       # 🖱 Optional: Manual trigger from UI
-    
+  workflow_run:
+    workflows: ["Python script job"]
+    types: 
+      - completed
 
 jobs:
   test:
