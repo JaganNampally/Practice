@@ -21,6 +21,6 @@ jobs:
 
       - name: Run dummy script
         run: |
-          echo "This is a dummy step"
+          echo "This is a dummy step and secret is ${{secrets.REPO_OWNER}}"
           echo "You can replace this with your actual logic"
 
